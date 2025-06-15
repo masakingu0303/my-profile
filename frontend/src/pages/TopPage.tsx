@@ -36,7 +36,7 @@ const TopPage = () => {
                     <Card.Body>
                         <img
                             src="/profile.jpg"
-                            alt="浅川真樹"
+                            alt="プロフィール写真"
                             width={160}
                             height={160}
                             className="rounded-circle shadow mb-3"
@@ -44,11 +44,11 @@ const TopPage = () => {
                         />
 
                         <h1 style={{ fontFamily: "'Zen Maru Gothic', sans-serif" }}>
-                            浅川 真樹
+                            苗字 名前
                         </h1>
 
                         <p className="mx-auto" style={{ maxWidth: '500px', fontSize: '1rem', color: '#555' }}>
-                            はじめまして！アイドルグループ BLACK IRIS の浅川真樹です🌟<br />
+                            はじめまして！アイドルグループ ****** の*****です🌟<br />
                             TikTokでは、みんなからの質問に動画で答えたり、日常のちょっとしたことを発信中！<br />
                             気軽にメッセージ送ってください♪
                         </p>
@@ -56,7 +56,7 @@ const TopPage = () => {
                         <Row className="justify-content-center gap-3 mb-4">
                             <Col xs="auto">
                                 <a
-                                    href="https://x.com/BLACKIRIS_msk"
+                                    href="https://x.com/******"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-primary"
@@ -67,7 +67,7 @@ const TopPage = () => {
                             </Col>
                             <Col xs="auto">
                                 <a
-                                    href="https://www.instagram.com/blackiris_msk/"
+                                    href="https://www.instagram.com/*****"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-danger"
@@ -78,7 +78,7 @@ const TopPage = () => {
                             </Col>
                             <Col xs="auto">
                                 <a
-                                    href="https://www.tiktok.com/@masaki_0303"
+                                    href="https://www.tiktok.com/@*****"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-dark"

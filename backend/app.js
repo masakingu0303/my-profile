@@ -5,16 +5,26 @@ const mysql = require('mysql2');
 
 const app = express();
 const port = 3001;
+const dotenv = require('dotenv')
 
 app.use(cors());
 app.use(bodyParser.json());
+dotenv.config();
 
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'Dunks012',  // ご自身の設定に応じて
+  password: MYSQL_PASSWORD='Dunks012',
   database: 'idol_profile'
 });
+
+//確認用
+app.get('/', (req, res) => {
+  db.query('SELECT * FROM questions', (err, result) => {
+    res.json(result);
+  });
+});
+
 
 app.get('/questions', (req, res) => {
   db.query('SELECT * FROM questions ORDER BY created_at DESC', (err, results) => {
