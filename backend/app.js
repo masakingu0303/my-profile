@@ -2,19 +2,20 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
+const dotenv = require('dotenv')
+
+dotenv.config();
 
 const app = express();
 const port = 3001;
-const dotenv = require('dotenv')
 
 app.use(cors());
 app.use(bodyParser.json());
-dotenv.config();
 
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: MYSQL_PASSWORD='Dunks012',
+  password: MYSQL_PASSWORD=process.env.MYSQL_PASSWORD,
   database: 'idol_profile'
 });
 
