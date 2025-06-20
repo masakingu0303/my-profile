@@ -7,13 +7,9 @@ const dotenv = require('dotenv')
 dotenv.config();
 
 const app = express();
-<<<<<<< HEAD
-const port = 3001;
-=======
 const port = 3000;
 const dotenv = require('dotenv')
 dotenv.config();
->>>>>>> 078e928 (デプロイ)
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -58,5 +54,5 @@ app.delete('/questions/:id', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running on http://10.0.2.217/${port}`);
 });
