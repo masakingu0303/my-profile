@@ -3,6 +3,9 @@ import axios from 'axios';
 import { Container, ListGroup, Card, Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+const API_URL = 'http://52.195.176.10:3000';
+
+
 interface Question {
     id: number;
     content: string;
@@ -14,7 +17,7 @@ const SecondPage = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/questions')
+        axios.get(`${API_URL}/questions`)
             .then((res) => {
                 setQuestions(res.data);
                 setLoading(false);

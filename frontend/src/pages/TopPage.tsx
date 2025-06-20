@@ -3,7 +3,9 @@ import { Container, Form, Button, Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaXTwitter, FaInstagram, FaTiktok } from 'react-icons/fa6';
 
-const API_URL = 'http://localhost:3001';
+//const API_URL = 'http://localhost:3000';
+const API_URL = 'http://52.195.176.10:3000';
+
 const MAX_LENGTH = 50;
 
 const TopPage = () => {
