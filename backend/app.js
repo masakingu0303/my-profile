@@ -8,7 +8,6 @@ dotenv.config();
 
 const app = express();
 const port = 3000;
-const dotenv = require('dotenv')
 dotenv.config();
 
 app.use(cors());
@@ -17,11 +16,7 @@ app.use(bodyParser.json());
 const db = mysql.createConnection({
   host: '10.0.2.217',
   user: 'root',
-<<<<<<< HEAD
-  password: MYSQL_PASSWORD=process.env.MYSQL_PASSWORD,
-=======
   password: process.env.MYSQL_PASSWORD,
->>>>>>> 078e928 (デプロイ)
   database: 'idol_profile'
 });
 
