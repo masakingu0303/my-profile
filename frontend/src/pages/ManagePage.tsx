@@ -22,12 +22,13 @@ const ManagePage = () => {
 
   const handleDelete = async (id: number) => {
     if (confirm('本当に削除しますか？')) {
-      await fetch(`${API_URL}/${id}`, {
+      await fetch(`${API_URL}/questions/${id}`, {
         method: 'DELETE',
       });
       fetchQuestions(); // 更新
     }
   };
+  
 
   useEffect(() => {
     fetchQuestions();
