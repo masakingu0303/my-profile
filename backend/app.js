@@ -14,7 +14,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const db = mysql.createConnection({
-  host: '10.0.2.217',
+  host: 'localhost',
   user: 'root',
   password: process.env.MYSQL_PASSWORD,
   database: 'idol_profile'
@@ -49,5 +49,6 @@ app.delete('/questions/:id', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running on http://10.0.2.217/${port}`);
+  console.log(`Server running on http://localhost:${port}`);
 });
+

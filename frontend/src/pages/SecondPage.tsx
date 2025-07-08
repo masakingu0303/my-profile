@@ -3,7 +3,8 @@ import axios from 'axios';
 import { Container, ListGroup, Card, Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const API_URL = 'http://52.195.176.10:3000';
+const API_URL = 'http://localhost:3000';
+// const API_URL = 'http://52.195.176.10:3000';
 
 
 interface Question {

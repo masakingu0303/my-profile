@@ -7,8 +7,8 @@ interface Question {
   content: string;
 }
 
-//const API_URL = 'http://localhost:3001/questions';
-const API_URL = 'http://52.195.176.10:3000';
+const API_URL = 'http://localhost:3000';
+// const API_URL = 'http://52.195.176.10:3000';
 
 
 const ManagePage = () => {
