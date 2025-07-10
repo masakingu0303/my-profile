@@ -13,11 +13,12 @@
 * フロントエンド React (TypeScript) + Vite
 * スタイリング bootstrap
 * バックエンド Node.js + Express
+* データベース MySQL
 * 環境変数管理 dotenv
 
 
 ##  実行環境
-MacBook Air　MacOSバージョン14.5 メモリ8G
+MacBook Air MacOSバージョン14.5 メモリ8G
 
 ##  今後の機能拡張案
 * 人気の動画をピックして貼る
